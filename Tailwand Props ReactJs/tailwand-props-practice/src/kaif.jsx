@@ -1,9 +1,10 @@
-function Kaif(props) {
-    console.log(props);
+function Kaif({username}) {
+    console.log(username);
     
     return (
         <>
-        <h1>Kaif Hu Mai</h1>
+        <h1>{username}</h1>
+        <h2></h2>
         </>
     )
 }
