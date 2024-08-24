@@ -7,13 +7,9 @@ function App() {
 
   const addValue = () =>{
     console.log("value add" , counter);
-    
-    counter = counter + 1
-    setCounter(counter)
-    if(counter === 25){
-      alert("kaise ho beta")
-    }
-    
+     
+    setCounter(counter => counter + 1)
+    setCounter(counter => counter + 1)
   }
 
   const removeValue = () =>{
