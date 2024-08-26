@@ -5,11 +5,11 @@ import "./App.css";
 import Kaif from "./kaif.jsx";
 
 function App() {
-  // let myObj = {
-  //   name: "kaif",
-  //   age: 15,
-  //   isMarried: false,
-  // };
+   let myObj = {
+   name: "kaif",
+  age: 15,
+    isMarried: false,
+  };
 
   // let myArr = [1, 2, 3, 4, 5];
   return (
