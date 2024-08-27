@@ -13,8 +13,7 @@ const customRender = (elementReact, container) => {
     for (const prop in elementReact.props) {
         domElement.setAttribute(prop, elementReact.props[prop])
     }
-
-    container.appendChild(domElement);
+    container.appendChild(domElement)
 }
 
 const elementReact = {
@@ -29,4 +28,4 @@ const elementReact = {
 
 const mainContainer = document.getElementById("root");
 
-customRender(elementReact, mainContainer)
+customRender(elementReact, mainContainer);
