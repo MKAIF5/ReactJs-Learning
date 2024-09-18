@@ -1,32 +1,32 @@
 import { useState } from "react";
 import "./App.css";
 
-
 function App() {
-  let [counter , setCounter] = useState(15)
 
-  const addValue = () =>{
-    console.log("value add" , counter);
-     
-    setCounter(counter => counter + 1)
-    setCounter(counter => counter + 1)
+  let [counter, setCounter] = useState(15);
+
+  const addValue = () => {
+    counter = counter + 1
+    setCounter(counter)
   }
 
-  const removeValue = () =>{
-    console.log("value add" , counter);
-    
+  const subValue = () =>{
     counter = counter - 1
     setCounter(counter)
   }
-  
+
+  if(counter === 0){
+    counter = 15
+  }
+
   return (
     <>
-      <h1>Create Counter</h1>
-      <p> Counter Value : {counter}</p>
+      <h1>Counter {counter}</h1>
       <button onClick={addValue}>Add Value</button>
-      <button onClick={removeValue}>Remove Value</button>
+      <button onClick={subValue}>Decrease Value</button>
+
     </>
-  );
+  )
 }
 
 export default App;
