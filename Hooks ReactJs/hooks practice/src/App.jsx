@@ -8,7 +8,6 @@ function App() {
   const [charAllowed, setCharAllowed] = useState(false);
   const [password, setPassword] = useState("");
 
-
   const passwordGenerator = useCallback(() => {
 
     let pass = ""
@@ -73,7 +72,7 @@ function App() {
             />
             <label>Numbers</label>
           </div>
-          
+
           <div className="flex items-center gap-x-1">
             <input
               type="checkbox"
