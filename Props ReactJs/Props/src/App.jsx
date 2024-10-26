@@ -4,7 +4,7 @@ import Kaif from './Components/Kaif'
 function App() {
   return (
     <>
-      <Kaif  title="Khan"/>
+      <Kaif  title="Khan" obj={function kaif() {return 1 + 1}} />
     </>
   )
 }

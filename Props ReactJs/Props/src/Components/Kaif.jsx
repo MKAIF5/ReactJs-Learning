@@ -3,6 +3,7 @@ function Kaif(props) {
         <>
         <div>
             <h1>Kaif {props.title}</h1>
+            <p>My Name Is {props.obj}</p>
         </div>
         </>
     )
