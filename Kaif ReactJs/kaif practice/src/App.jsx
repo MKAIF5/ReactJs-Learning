@@ -25,7 +25,11 @@ function App() {
   return (
     <>
 
-
+      <ul>
+        {products.map((prod , i) => [
+          <li>{i + 1}: {prod.title} : {prod.price}</li>
+        ])}
+      </ul>
     </>
   )
 }
