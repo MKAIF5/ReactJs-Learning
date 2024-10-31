@@ -1,7 +1,28 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
 
+  const [password, setPassword] = useState("");
+  const [length, setLength] = useState(8);
+  const [numberAllowed, setNumberAllowed] = useState(false);
+  const [charAllowed, setCharAllowed] = useState(false);
+
+  const passwordGenerator = () => {
+    let pass = "";
+    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+    if (numberAllowed) {
+      str += "1234567890"
+    }
+
+    if (charAllowed) {
+      str += "!@#$%^&*(){}[]<>:;`~"
+    }
+
+
+
+  }
 
 
   return (
@@ -25,10 +46,16 @@ function App() {
         <div className="flex text-sm gap-x-2">
           <div className="flex items-center gap-x-1">
             <input
+              min={8}
+              max={20}
+              value={length}
               className="cursor-pointer"
               type="range"
+              onChange={(e) => {
+                setLength(Number(e.target.value))
+              }}
             />
-            <label>Length: 8</label>
+            <label>Length: {length}</label>
           </div>
           <div className="flex items-center gap-x-1">
             <input
