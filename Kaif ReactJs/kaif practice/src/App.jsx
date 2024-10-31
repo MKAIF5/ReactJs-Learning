@@ -46,7 +46,7 @@ function App() {
   return (
     <>
 
-      <ul>
+      <ul style={{listStyle: "none"}}>
         {foods.map((items, index) => {
           return <li key={items.Id}
             style={{ color: items.isFruit ? "green" : "red" }}
