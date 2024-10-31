@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 
 
@@ -36,6 +37,11 @@ function App() {
     { title: "Onion", Id: 10, isFruit: false },
   ]
 
+  const [name, setName] = useState(true)
+
+  const btnClick = () => {
+    setName(alert("kaif"))
+  }
 
   return (
     <>
@@ -48,7 +54,7 @@ function App() {
         })}
       </ul>
 
-
+      <button onClick={btnClick}>Hello {name}</button>
 
 
 
